@@ -1,21 +1,249 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AfriTalent — Accueil</title>
-<!-- Bootstrap 5 via CDN : feuille de style -->
-<link
-href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-rel="stylesheet">
-<!-- Votre feuille de style personnelle -->
+<head> 
+<meta charset="UTF-8"> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<title>AfriTalent — Accueil</title> 
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"> 
 <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-<!-- Le contenu de la page sera ajoute ici -->
-<!-- Bootstrap 5 via CDN : script JavaScript -->
-<script
-src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-></script>
-<!-- Votre script JavaScript -->
+<body> 
+
+<!-- Navigation Bootstrap commune a toutes les pages --> 
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<div class="d-flex align-items-center px-3">
+        <img src="image projet/logo.jpeg" alt="image projet/logo.jpeg" width="200" height="80">
+    </div>
+<div class="container"> 
+<button class="navbar-toggler" type="button" 
+data-bs-toggle="collapse" 
+data-bs-target="#navMenu" 
+aria-controls="navMenu" 
+aria-expanded="false" 
+aria-label="Toggle navigation"> 
+<span class="navbar-toggler-icon"></span> 
+</button> 
+<div class="collapse navbar-collapse" id="navMenu"> 
+<ul class="navbar-nav mx-auto"> 
+<li class="nav-item"><a class="nav-link active" href="index.html">Accueil</a></li> 
+<li class="nav-item"><a class="nav-link" href="freelances.html">Freelances</a></li> 
+<li class="nav-item"><a class="nav-link" href="Tarif.html">Tarifs</a></li> 
+<li class="nav-item"><a class="nav-link" href="about.html">A propos</a></li> 
+<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li> 
+</ul> 
+</div> 
+</div>
+  
+<div class="px-3">
+        <a href="#" class="btn btn-primary fw-semibold px-4 rounded-pill shadow-sm">Rejoindre Afritalent</a>
+    </div>
+</nav> 
+
+<!-- Contenu principal --> 
+<main> 
+
+<!-- Section Hero : accroche principale --> 
+<section id="hero" class="py-5 bg-light">
+    <div class="container">
+        <div class="row align-items-center g-4">
+
+            <!-- Boutons à gauche -->
+            <div class="col-md-6">
+                <div class="d-flex gap-3">
+                    <a href="freelances.html" class="btn btn-primary btn-lg">Je cherche un freelance</a> 
+                    <button class="btn btn-primary btn-lg">Je suis   freelances</button>
+                </div>
+            </div>
+
+            <!-- Image à droite -->
+            <div class="col-md-6 text-center">
+                <img src="C:\Users\hp\OneDrive\Desktop\image projet\utilisateur2.jpeg" alt="" class="img-fluid rounded">
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Section Comment ça marche -->
+<section id="comment-ca-marche" class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-4"><strong>Comment ça marche ?</strong></h2>
+        <div class="row g-4 mt-2">
+            <div class="col-md-4">
+                <div class="border rounded p-4 h-100 shadow-sm">
+                    <div>
+                        <img src="image projet/avatar.jpeg" alt="image projet/avatar.jpeg"height="200" width="280">
+                    </div>
+                <h3>Créer votre profil</h3> 
+                <p>Inscrivez-vous en quelques minutes. Freelance ou entreprise, configurez votre compte, ajoutez vos compétences ou vos besoins et commencez à utiliser la plateforme.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                        <div class="border rounded p-4 h-100 shadow-sm">
+                            <div>
+                                <img src="image projet/mission.jpeg" alt="image projet/mission.jpeg"widht="200"height="180">
+                            </div>
+                    
+                <h3>Trouvez la mission ou le talent</h3>
+                <p>Utilisez nos filtres intelligents par compétence, budget, disponibilité et localisation. Contactez directement ou répondez à nos offres.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                
+                <div class="border rounded p-4 h-100 shadow-sm">
+                    <div>
+                    <img src="image projet/colloboration.png" alt="image projet/colloboration.png"width="320"height="250">
+                </div>
+                <h3>Collaborez &amp; payez</h3>
+                <p>Signez un contrat digital, travaillez en toute confiance. Le paiement est libéré à la validation.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section> 
+
+<!-- Section Services --> 
+<section id="services" class="py-5"> 
+<div class="container text-center">
+
+<h2><strong>Catégories de services</strong></h2> 
+<p>Des centaines de freelances spécialisés dans les domaines les plus demandés.</p>
+<div class="row g-4 mt-2"> 
+<div class="col-md-4"> 
+<div class="border rounded p-4 h-100 shadow-sm">
+    <div>
+        <img src="image projet/web dev.jpeg" alt="image projet/web dev.jpeg"width="310"height="310">
+    </div>
+<h3>Developpement Web</h3> 
+<p>Sites vitrine, applications web, e-commerce.</p> 
+</div>
+</div> 
+<div class="col-md-4"> 
+<div class="border rounded p-4 h-100 shadow-sm">
+    <div>
+        <img src="image projet/design.jpeg" alt="image projet/design.jpeg"width="310"height="310">
+    </div>
+<h3>Design Graphique</h3> 
+<p>Identite visuelle, UI/UX, illustrations.</p> 
+</div>
+</div> 
+<div class="col-md-4"> 
+<div class="border rounded p-4 h-100 shadow-sm">
+    <div>
+        <img src="image projet/marketing.jpeg" alt="image projet/marketing.jpeg"width="310"height="310">
+    </div>
+<h3>Marketing Digital</h3> 
+<p>Reseaux sociaux, SEO, campagnes publicitaires.</p> 
+</div>
+</div> 
+</div> 
+</div> 
+</section> 
+
+<!-- Section Statistiques --> 
+<section id="statistiques" class="py-5 bg-dark text-white"> 
+<div class="container"> 
+<h2 class="text-center">AfriTalent en chiffres</h2> 
+<div class="row text-center g-4 mt-2"> 
+<div class="col-md-4"><div class="border rounded p-4 h-100 shadow-sm"><p>25 000+ Freelances</p></div></div> 
+<div class="col-md-4"><div class="border rounded p-4 h-100 shadow-sm"><p>800+ entreprises</p></div></div> 
+<div class="col-md-4"><div class="border rounded p-4 h-100 shadow-sm"><p>12 000+ Mission réalisées</p></div></div> 
+</div> 
+</div> 
+</section> 
+
+<!-- Section Temoignages --> 
+<section id="temoignages" class="py-5"> 
+<div class="container text-center"> 
+<h2><strong>Ce que disent nos clients</strong></h2> 
+<p>Des freelances et entreprises satisfaits à travers tout le continent.</p>
+<blockquote class="blockquote">
+    <div class="row g-4 mt-2">
+        <div class="col-md-4">
+            <div class="border rounded p-4 h-100 shadow-sm">
+                <div>
+                    <img src="image projet/user3.jpeg" alt="image projet/user3.jpeg"width="310" height="310" class="rounded-circle mb-3">
+                </div>
+            <h3>Awa konaté <br> Freelance - développeuse <br> Dakar</h3>
+            <p>Grace à Afritalent j'ai décroché ma première mission internationale en moins de deux semaines.</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+          
+            <div class="border rounded p-4 h-100 shadow-sm">
+                  <div>
+                <img src="image projet/user4.jpeg" alt="image projet/user4.jpeg"width="310" height="310" class="rounded-circle mb-3">
+            </div>
+            <h3>Oscar Dasilva <br> client-freelance <br> Praia</h3>
+            <p>AfriTalent m'a permis de trouver un developpeur compétent en moins de 48h.</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="border rounded p-4 h-100 shadow-sm">
+                <div>
+                    <img src="image projet/user2.jpeg" alt="image projet/user2.jpeg"width="310" height="310"class="rounded-circle mb-3" >
+                </div>
+            <h3>George  Sidiké <br> Entreprise - CTO TechCorp <br> Abidjant</h3>
+            <p>Nous avons recruté 4 développeurs en moins d'un mois. La qualité des profils est remarquable.</p>
+            </div>
+        </div>
+    </div>
+</blockquote>
+<div class="mt-4">
+        <button class="btn btn-primary btn-lg">S'inscrire gratuitement</button>
+    </div>
+</div>    
+</section>
+
+</main> 
+
+<!-- Pied de page --> 
+<footer class="bg-dark text-white py-5"> 
+<div class="container">
+    <div class="row">
+
+        <!-- AfriTalent description - pas en grid interne -->
+        <div class="col-lg-6 mb-4">
+            <h2 class="text-warning">Afritalent</h2>
+            <p class="text-white-50">La plateforme qui connecte les freelances tech africains aux meilleures opportunités mondiales.</p>
+        </div>
+
+        <!-- Liens utiles - pas en grid interne -->
+        <div class="col-lg-3 mb-4">
+            <h3 class="h5">Liens utiles</h3>
+            <ul class="list-unstyled">
+                <li><a href="Index.html" class="text-white-50 text-decoration-none">Acceuil</a></li>
+                <li><a href="About.html" class="text-white-50 text-decoration-none">A propos</a></li>
+                <li><a href="Tarif.html" class="text-white-50 text-decoration-none">Tarif</a></li>
+                <li><a href="Contact.html" class="text-white-50 text-decoration-none">Contact</a></li>
+                <li><a href="Freelances.html" class="text-white-50 text-decoration-none">Freelance</a></li>
+            </ul>
+        </div>
+
+        <!-- Réseaux sociaux -->
+        <div class="col-lg-3 mb-4">
+            <h3 class="h5">Suivez-nous</h3>
+            <div class="d-flex gap-3 mt-2">
+                <a href="https://www.instagram.com" target="_blank">
+                    <img src="https://tse4.mm.bing.net/th/id/OIP.JtmXSh_uyZBaTg1eXd-NtgHaHa?rs=1&pid=ImgDetMain&o=7&rm=3" alt="instagram" width="28" height="28">
+                </a>
+                <a href="https://www.facebook.com" target="_blank">
+                    <img src="https://static.vecteezy.com/system/resources/previews/025/734/144/non_2x/social-media-icon-free-png.png" alt="facebook" width="28" height="28">
+                </a>
+                <a href="https://www.twitter.com" target="_blank">
+                    <img src="https://static.vecteezy.com/system/resources/previews/018/930/745/original/twitter-logo-twitter-icon-transparent-free-free-png.png" alt="twitter" width="28" height="28">
+                </a>
+            </div>
+        </div>
+
+    </div>
+    <hr class="border-secondary">
+    <p class="text-center text-white-50 mb-0">&copy; 2026 AfriTalent. Tous droits reserves.</p> 
+</div>
+</footer> 
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script> 
 <script src="js/main.js"></script>
+
+</body>
+</html>

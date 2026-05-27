@@ -236,3 +236,35 @@ footer hr {
 }
 
 footer .text-white-50.mb-0 { font-size: 0.85rem; }
+.temoignage-card {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 40px;
+  max-width: 600px;
+  text-align: center;
+}
+
+.temo-text {
+  font-size: 1.1rem;
+  font-style: italic;
+  color: var(--text);
+  margin-bottom: 20px;
+  line-height: 1.7;
+}
+
+.temo-author {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+/* Petits ronds du carousel en orange */
+.carousel-indicators [data-bs-slide-to] {
+  background-color: var(--accent) !important;
+}
+
+/* Flèches du carousel en couleur du texte */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(1) sepia(1) saturate(5) hue-rotate(10deg) brightness(0.8);
+}

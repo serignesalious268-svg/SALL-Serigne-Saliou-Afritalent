@@ -42,6 +42,206 @@ href="contact.html">Contact</a></li>
 </div> 
 </div> 
 </nav>
+
+<div class="container mt-4">
+
+    <h1 class="fw-bold text-warning">Catalogue des Freelances</h1>
+    <p class="text-muted mb-4">Trouvez le talent qu'il vous faut parmi nos professionnels africains.</p>
+
+    <!-- BARRE DE FILTRES -->
+    <div class="mb-4">
+      <span class="fw-bold me-2">Filtrer par catégorie :</span>
+      <button class="btn btn-warning btn-sm me-1" onclick="filtrer('tous')">Tous</button>
+      <button class="btn btn-outline-secondary btn-sm me-1" onclick="filtrer('design')">Design</button>
+      <button class="btn btn-outline-secondary btn-sm me-1" onclick="filtrer('dev')">Développement</button>
+      <button class="btn btn-outline-secondary btn-sm me-1" onclick="filtrer('marketing')">Marketing</button>
+      <button class="btn btn-outline-secondary btn-sm me-1" onclick="filtrer('redaction')">Rédaction</button>
+      <button class="btn btn-outline-secondary btn-sm me-1" onclick="filtrer('video')">Vidéo</button>
+    </div>
+
+    <!-- GRILLE DE PROFILS -->
+    <div class="row" id="grille">
+
+      <!-- Profil 1 -->
+      <div class="col-12 col-md-6 col-lg-4 mb-4 carte" data-categorie="design">
+        <div class="card h-100 text-center shadow-sm">
+          <div class="card-body">
+            <img src="image projet/F4.jpg" alt="image projet/F4.jpg"width="200"height="200" class="rounded-circle mb-3" />
+            <h5 class="card-title fw-bold">Amina Koné</h5>
+            <p class="text-warning fw-bold small mb-1">Design Graphique</p>
+            <p class="card-text text-muted small">Spécialisée en identité visuelle et création de logos pour startups africaines.</p>
+            <p class="small text-secondary mb-1">💰 15 000 FCFA / heure</p>
+            <p class="text-warning mb-2">★★★★★</p>
+            <a href="#" class="btn btn-warning btn-sm rounded-pill px-4">Voir le profil</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Profil 2 -->
+      <div class="col-12 col-md-6 col-lg-4 mb-4 carte" data-categorie="dev">
+        <div class="card h-100 text-center shadow-sm">
+          <div class="card-body">
+            <img src="image projet/utlisateur5.avif" alt="image projet/utlisateur5.avif"width="200"height="200" class="rounded-circle mb-3" />
+            <h5 class="card-title fw-bold">Moussa Diallo</h5>
+            <p class="text-warning fw-bold small mb-1">Développement Web</p>
+            <p class="card-text text-muted small">Développeur full-stack avec 4 ans d'expérience en React et Node.js.</p>
+            <p class="small text-secondary mb-1">💰 20 000 FCFA / heure</p>
+            <p class="text-warning mb-2">★★★★☆</p>
+            <a href="#" class="btn btn-warning btn-sm rounded-pill px-4">Voir le profil</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Profil 3 -->
+      <div class="col-12 col-md-6 col-lg-4 mb-4 carte" data-categorie="marketing">
+        <div class="card h-100 text-cente
+      </div>
+
+      <!-- Profil 4 -->
+      <div class="col-12 col-md-6 col-lg-4 mb-4 carte" data-categorie="redaction">
+        <div class="card h-100 text-center shadow-sm">
+            
+          <div class="card-body">
+            <img src="imager shadow-sm">
+          <div class="card-body">
+            <img src="image projet/F5.jpg" alt="image projet/F5.jpg"width="200"height="200" class="rounded-circle mb-3" />
+            <h5 class="card-title fw-bold">Fatou Sow</h5>
+            <p class="text-warning fw-bold small mb-1">Marketing Digital</p>
+            <p class="card-text text-muted small">Experte en gestion des réseaux sociaux et campagnes Facebook/Instagram.</p>
+            <p class="small text-secondary mb-1">💰 12 000 FCFA / heure</p>
+            <p class="text-warning mb-2">★★★★★</p>
+            <a href="#" class="btn btn-warning btn-sm rounded-pill px-4">Voir le profil</a>
+          </div>
+        </div> projet/utlisateur2.jpg" alt="image projet/utlisateur2.jpg"width="200"height="200" class="rounded-circle mb-3" />
+            <h5 class="card-title fw-bold">Cheikh Mbaye</h5>
+            <p class="text-warning fw-bold small mb-1">Rédaction Web</p>
+            <p class="card-text text-muted small">Rédacteur SEO spécialisé dans les articles de blog et contenus e-commerce.</p>
+            <p class="small text-secondary mb-1">💰 8 000 FCFA / heure</p>
+            <p class="text-warning mb-2">★★★★☆</p>
+            <a href="#" class="btn btn-warning btn-sm rounded-pill px-4">Voir le profil</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Profil 5 -->
+      <div class="col-12 col-md-6 col-lg-4 mb-4 carte" data-categorie="video">
+        <div class="card h-100 text-center shadow-sm">
+          <div class="card-body">
+            <img src="image projet/F3.jpg" alt="image projet/F3.jpg"width="200"height="200" class="rounded-circle mb-3" />
+            <h5 class="card-title fw-bold">Aïcha Traoré</h5>
+            <p class="text-warning fw-bold small mb-1">Montage Vidéo</p>
+            <p class="card-text text-muted small">Monteuse professionnelle pour YouTube, publicités et courts métrages.</p>
+            <p class="small text-secondary mb-1">💰 18 000 FCFA / heure</p>
+            <p class="text-warning mb-2">★★★★★</p>
+            <a href="#" class="btn btn-warning btn-sm rounded-pill px-4">Voir le profil</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Profil 6 -->
+      <div class="col-12 col-md-6 col-lg-4 mb-4 carte" data-categorie="dev">
+        <div class="card h-100 text-center shadow-sm">
+          <div class="card-body">
+            <img src="image projet/utlisateur6.avif" alt="image projet/utlisateur6.avif"width="200"height="200" class="rounded-circle mb-3" />
+            
+            <h5 class="card-title fw-bold">Ibrahim Ndiaye</h5>
+            <p class="text-warning fw-bold small mb-1">Développement Mobile</p>
+            <p class="card-text text-muted small">Développeur d'applications Android et iOS avec Flutter et Dart.</p>
+            <p class="small text-secondary mb-1">💰 22 000 FCFA / heure</p>
+            <p class="text-warning mb-2">★★★★☆</p>
+            <a href="#" class="btn btn-warning btn-sm rounded-pill px-4">Voir le profil</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Profil 7 -->
+      <div class="col-12 col-md-6 col-lg-4 mb-4 carte" data-categorie="design">
+        <div class="card h-100 text-center shadow-sm">
+          <div class="card-body">
+            <img src="image projet/F2.jpg" alt="image projet/F2.jpg"width="200"height="200" class="rounded-circle mb-3" />
+            <h5 class="card-title fw-bold">Mariama Ba</h5>
+            <p class="text-warning fw-bold small mb-1">UI/UX Design</p>
+            <p class="card-text text-muted small">Designeuse d'interfaces mobiles et web avec Figma, centrée sur l'expérience utilisateur.</p>
+            <p class="small text-secondary mb-1">💰 17 000 FCFA / heure</p>
+            <p class="text-warning mb-2">★★★★★</p>
+            <a href="#" class="btn btn-warning btn-sm rounded-pill px-4">Voir le profil</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Profil 8 -->
+      <div class="col-12 col-md-6 col-lg-4 mb-4 carte" data-categorie="marketing">
+        <div class="card h-100 text-center shadow-sm">
+          <div class="card-body">
+            <img src="image projet/utlisiateur4.webp" alt="image projet/utlisiateur4.webp"width="200"height="200" class="rounded-circle mb-3" />
+            <h5 class="card-title fw-bold">Seydou Coulibaly</h5>
+            <p class="text-warning fw-bold small mb-1">Community Management</p>
+            <p class="card-text text-muted small">Gestionnaire de communautés en ligne et créateur de contenu pour marques locales.</p>
+            <p class="small text-secondary mb-1">💰 10 000 FCFA / heure</p>
+            <p class="text-warning mb-2">★★★☆☆</p>
+            <a href="#" class="btn btn-warning btn-sm rounded-pill px-4">Voir le profil</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Profil 9 -->
+      <div class="col-12 col-md-6 col-lg-4 mb-4 carte" data-categorie="redaction">
+        <div class="card h-100 text-center shadow-sm">
+          <div class="card-body">
+            <img src="image projet/F1.avif" alt="image projet/F1.avif"width="200"height="200" class="rounded-circle mb-3" />
+            <h5 class="card-title fw-bold">Nadia Ndiaye</h5>
+            <p class="text-warning fw-bold small mb-1">Traduction & Rédaction</p>
+            <p class="card-text text-muted small">Traductrice français/anglais et rédactrice de rapports pour ONG et entreprises.</p>
+            <p class="small text-secondary mb-1">💰 9 000 FCFA / heure</p>
+            <p class="text-warning mb-2">★★★★☆</p>
+            <a href="#" class="btn btn-warning btn-sm rounded-pill px-4">Voir le profil</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="bg-dark text-center text-secondary py-4 mt-5">
+   
+         <!-- AfriTalent description - pas en grid interne -->
+        <div class="col-lg-6 mb-4">
+            <h2 class="text-warning"><strong style="color: white;">Afritalent</strong></h2>
+            <p class="text-white-50">La plateforme qui connecte les freelances tech africains aux meilleures opportunités mondiales.</p>
+        </div>
+
+        <!-- Liens utiles - pas en grid interne -->
+        <div class="col-lg-3 mb-4">
+            <h3 class="h5">Liens utiles</h3>
+            <ul class="list-unstyled">
+                <li><a href="Index.html" class="text-white-50 text-decoration-none">Acceuil</a></li>
+                <li><a href="About.html" class="text-white-50 text-decoration-none">A propos</a></li>
+                <li><a href="Tarif.html" class="text-white-50 text-decoration-none">Tarif</a></li>
+                <li><a href="Contact.html" class="text-white-50 text-decoration-none">Contact</a></li>
+                <li><a href="Freelances.html" class="text-white-50 text-decoration-none">Freelance</a></li>
+            </ul>
+        </div>
+
+        <!-- Réseaux sociaux -->
+        <div class="col-lg-3 mb-4">
+            <h3 class="h5">Suivez-nous</h3>
+            <div class="d-flex gap-3 mt-2">
+                <a href="https://www.instagram.com" target="_blank">
+                    <img src="https://tse4.mm.bing.net/th/id/OIP.JtmXSh_uyZBaTg1eXd-NtgHaHa?rs=1&pid=ImgDetMain&o=7&rm=3" alt="instagram" width="35" height="35">
+                </a>
+                <a href="https://www.facebook.com" target="_blank">
+                    <img src="https://static.vecteezy.com/system/resources/previews/025/734/144/non_2x/social-media-icon-free-png.png" alt="facebook" width="40" height="40">
+                </a>
+                <a href="https://www.twitter.com" target="_blank">
+                    <img src="https://static.vecteezy.com/system/resources/previews/018/930/745/original/twitter-logo-twitter-icon-transparent-free-free-png.png" alt="twitter" width="45" height="45">
+                </a>
+            </div>
+            <p class="mb-0" >© 2026 AfriTalent Tous droits réservés</p>
+        </div>
+      
+
+  </footer>
 <!-- Bootstrap 5 via CDN : script JavaScript -->
   <script >
 src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"

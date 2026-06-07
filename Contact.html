@@ -46,6 +46,163 @@ href="contact.html">Contact</a></li>
 </div> 
 </nav> 
 
+  <!-- Titre de la page -->
+  <div class="bg-dark text-white py-4">
+    <div class="container">
+      <h1>Contactez-nous</h1>
+      <p class="mb-0">Nous sommes disponibles pour répondre à toutes vos questions.</p>
+    </div>
+  </div>
+ 
+  <!-- Section principale -->
+  <section class="py-5">
+    <div class="container">
+      <div class="row g-5">
+ 
+        <!-- Formulaire de contact -->
+        <div class="col-md-7">
+          <h3 class="mb-4">Envoyez-nous un message</h3>
+ 
+          <!-- Message de succès (caché par défaut) -->
+          <div class="alert alert-success d-none" id="messageSucces">
+            <i class="bi bi-check-circle-fill me-2"></i>
+            Votre message a bien été envoyé ! Nous vous répondrons dans les plus brefs délais.
+          </div>
+ 
+          <form id="formulaireContact" novalidate>
+ 
+            <!-- Nom et Prénom -->
+            <div class="row g-3 mb-3">
+              <div class="col-md-6">
+                <label for="nom" class="form-label">Nom <span class="text-danger">*</span></label>
+                <input type="text" class="form-control" id="nom" placeholder="Ndoye">
+                <div class="invalid-feedback">Veuillez entrer votre nom.</div>
+              </div>
+              <div class="col-md-6">
+                <label for="prenom" class="form-label">Prénom <span class="text-danger">*</span></label>
+                <input type="text" class="form-control" id="prenom" placeholder="Mouhamed">
+                <div class="invalid-feedback">Veuillez entrer votre prénom.</div>
+              </div>
+            </div>
+ 
+            <!-- Email -->
+            <div class="mb-3">
+              <label for="email" class="form-label">Email <span class="text-danger">*</span></label>
+              <input type="email" class="form-control" id="email" placeholder="exemple@mail.com">
+              <div class="invalid-feedback">Veuillez entrer un email valide (exemple@domaine.com).</div>
+            </div>
+ 
+            <!-- Sujet -->
+            <div class="mb-3">
+              <label for="sujet" class="form-label">Sujet <span class="text-danger">*</span></label>
+              <select class="form-select" id="sujet">
+                <option value="">-- Choisissez un sujet --</option>
+                <option value="info">Demande d'information</option>
+                <option value="support">Support technique</option>
+                <option value="partenariat">Partenariat</option>
+                <option value="autre">Autre</option>
+              </select>
+              <div class="invalid-feedback">Veuillez choisir un sujet.</div>
+            </div>
+ 
+            <!-- Message -->
+            <div class="mb-3">
+              <label for="message" class="form-label">Message <span class="text-danger">*</span></label>
+              <textarea class="form-control" id="message" rows="5" placeholder="Votre message (minimum 20 caractères)..."></textarea>
+              <div class="invalid-feedback">Le message doit contenir au moins 20 caractères.</div>
+            </div>
+ 
+            <button type="button" class="btn btn-dark" onclick="validerFormulaire()">
+              <i class="bi bi-send me-2"></i>Envoyer le message
+            </button>
+ 
+          </form>
+        </div>
+ 
+        <!-- Informations de contact -->
+        <div class="col-md-5">
+          <h3 class="mb-4">Nos coordonnées</h3>
+ 
+          <ul class="list-unstyled">
+            <li class="mb-3">
+              <i class="bi bi-envelope-fill text-dark me-2 fs-5"></i>
+              <strong>Email :</strong><br>
+              <span class="ms-4">contact@afritalent.fr</span>
+            </li>
+            <li class="mb-3">
+              <i class="bi bi-telephone-fill text-dark me-2 fs-5"></i>
+              <strong>Téléphone :</strong><br>
+              <span class="ms-4">+221 33 869 12 34</span>
+            </li>
+            <li class="mb-3">
+              <i class="bi bi-geo-alt-fill text-dark me-2 fs-5"></i>
+              <strong>Adresse :</strong><br>
+              <span class="ms-4"> Avenue cheikh Anta Diop, Dakar, Sénégal</span>
+            </li>
+            <li class="mb-3">
+              <i class="bi bi-clock-fill text-dark me-2 fs-5"></i>
+              <strong>Horaires :</strong><br>
+              <span class="ms-4"> Du Lundi au Vendredi : 9h00 18h00</span>
+            </li>
+          </ul>
+ 
+          <!-- Carte Google Maps -->
+          <h5 class="mt-4 mb-2">Nous trouver</h5>
+          <iframe
+            src="https://www.google.com/maps/?q=afritalent+dakar&output=embed"
+            width="100%"
+            height="250"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            class="rounded">
+          </iframe>
+        </div>
+ 
+      </div>
+    </div>
+  </section>
+ 
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3">  <!-- AfriTalent description - pas en grid interne -->
+        <div class="col-lg-6 mb-4">
+            <h2 class="text-warning"><strong style="color: white;">Afritalent</strong></h2>
+            <p class="text-white-50">La plateforme qui connecte les freelances tech africains aux meilleures opportunités mondiales.</p>
+        </div>
+
+        <!-- Liens utiles - pas en grid interne -->
+        <div class="col-lg-3 mb-4">
+            <h3 class="h5">Liens utiles</h3>
+            <ul class="list-unstyled">
+                <li><a href="Index.html" class="text-white-50 text-decoration-none">Acceuil</a></li>
+                <li><a href="About.html" class="text-white-50 text-decoration-none">A propos</a></li>
+                <li><a href="Tarif.html" class="text-white-50 text-decoration-none">Tarif</a></li>
+                <li><a href="Contact.html" class="text-white-50 text-decoration-none">Contact</a></li>
+                <li><a href="Freelances.html" class="text-white-50 text-decoration-none">Freelance</a></li>
+            </ul>
+        </div>
+
+        <!-- Réseaux sociaux -->
+        <div class="col-lg-3 mb-4">
+            <h3 class="h5">Suivez-nous</h3>
+            <div class="d-flex gap-3 mt-2">
+                <a href="https://www.instagram.com" target="_blank">
+                    <img src="https://tse4.mm.bing.net/th/id/OIP.JtmXSh_uyZBaTg1eXd-NtgHaHa?rs=1&pid=ImgDetMain&o=7&rm=3" alt="instagram" width="35" height="35">
+                </a>
+                <a href="https://www.facebook.com" target="_blank">
+                    <img src="https://static.vecteezy.com/system/resources/previews/025/734/144/non_2x/social-media-icon-free-png.png" alt="facebook" width="40" height="40">
+                </a>
+                <a href="https://www.twitter.com" target="_blank">
+                    <img src="https://static.vecteezy.com/system/resources/previews/018/930/745/original/twitter-logo-twitter-icon-transparent-free-free-png.png" alt="twitter" width="45" height="45">
+                </a>
+            </div>
+            
+    
+  </footer>
+    <p class="mb-0">&copy; 2026 AfriTalent. Tous droits réservés.</p>
+  </footer>
+
 
 <!-- Bootstrap 5 via CDN : script JavaScript -->
 <script

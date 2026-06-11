@@ -120,6 +120,11 @@ ul, ol { list-style: none; padding: 0; margin: 0; }
   background-color: var(--couleur-carte);
   padding: var(--espace-xl) 0;
 }
+.profil{
+  display: flex;
+  justify-content: center;
+
+}
 
 #hero .btn-primary,
 #temoignages .btn-primary {
@@ -295,3 +300,26 @@ footer .text-white-50.mb-0 { font-size: 0.85rem; }
     padding: 8px 16px;
   }
 }
+
+body[data-theme="dark"] {
+  background-color: #121212 !important;
+  color: #f0f0f0 !important;
+}
+
+body[data-theme="dark"] .card,
+body[data-theme="dark"] .border.rounded {
+  background-color: #1e1e1e !important;
+  border-color: #444 !important;
+  color: #f0f0f0 !important;
+}
+
+body[data-theme="dark"] .bg-light {
+  background-color: #1e1e1e !important;
+}
+
+body[data-theme="dark"] p,
+body[data-theme="dark"] h1,
+body[data-theme="dark"] h2,
+body[data-theme="dark"] h3 {
+  color: #f0f0f0 !important;
+  }

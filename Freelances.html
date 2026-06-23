@@ -1,75 +1,69 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AfriTalent — Freelances</title>
-<!-- Bootstrap 5 via CDN : feuille de style -->
-<link
-href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-rel="stylesheet">
-<!-- Votre feuille de style personnelle -->
-<link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AfriTalent — Freelances</title>
+  <!-- Bootstrap 5 : feuille de style -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- CSS personnalisé -->
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<!-- Le contenu de la page sera ajoute ici -->
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark"> 
-    <img src="image projet/logo.jpeg" alt="image projet/logo.jpeg" width="200"height="80">
-<div class="container"> 
-<!-- <a class="navbar-brand" href="index.html">AfriTalent</a>  -->
-<button class="navbar-toggler" type="button" 
-data-bs-toggle="collapse" 
-data-bs-target="#navMenu" 
-aria-controls="navMenu" 
-aria-expanded="false" 
-aria-label="Toggle navigation"> 
-<span class="navbar-toggler-icon"></span> 
-</button> 
-<div class="collapse navbar-collapse" id="navMenu"> 
-<ul class="navbar-nav ms-auto"> 
-<li class="nav-item"><a class="nav-link active" 
-href="index.html">Accueil</a></li> 
-<li class="nav-item"><a class="nav-link" 
-href="Freelances.html">Freelances</a></li> 
-<li class="nav-item"><a class="nav-link" 
-href="Tarif.html">Tarifs</a></li> 
-<li class="nav-item"><a class="nav-link" href="about.html">A 
-propos</a></li> 
-<li class="nav-item"><a class="nav-link" 
-href="contact.html">Contact</a></li> 
-</ul> 
-</div> 
-<button id="themeToggle">🌙</button>
-</div> 
-</nav>
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="d-flex align-items-center px-3">
+      <img src="image projet/logo.jpeg" alt="Logo AfriTalent" width="200" height="80">
+    </div>
+    <div class="container">
+      <button class="navbar-toggler" type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navMenu"
+        aria-controls="navMenu"
+        aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+          <li class="nav-item"><a class="nav-link active" href="freelances.html">Freelances</a></li>
+          <li class="nav-item"><a class="nav-link" href="tarif.html">Tarifs</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">À propos</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <!-- COMMIT 6 : Bouton dark/light mode -->
+      <button id="themeToggle">🌙</button>
+    </div>
+  </nav>
 
-  <div class="container mt-4">
-
+  <!-- ===== CATALOGUE FREELANCES ===== -->
+  <div class="container mt-4 fade-section">
     <h1 class="fw-bold text-warning">Catalogue des Freelances</h1>
     <p class="text-muted mb-4">Trouvez le talent qu'il vous faut parmi nos professionnels africains.</p>
 
-    <!-- BARRE DE FILTRES -->
+    <!-- COMMIT 8 : Barre de filtres — passe "this" pour savoir quel bouton est cliqué -->
     <div class="mb-4">
       <span class="fw-bold me-2">Filtrer par catégorie :</span>
-      <button class="btn btn-warning btn-sm me-1" onclick="filtrer('tous')">Tous</button>
-      <button class="btn btn-outline-secondary btn-sm me-1" onclick="filtrer('design')">Design</button>
-      <button class="btn btn-outline-secondary btn-sm me-1" onclick="filtrer('dev')">Développement</button>
-      <button class="btn btn-outline-secondary btn-sm me-1" onclick="filtrer('marketing')">Marketing</button>
-      <button class="btn btn-outline-secondary btn-sm me-1" onclick="filtrer('redaction')">Rédaction</button>
-      <button class="btn btn-outline-secondary btn-sm me-1" onclick="filtrer('video')">Vidéo</button>
+      <button class="btn btn-warning btn-sm me-1" onclick="filtrer('tous', this)">Tous</button>
+      <button class="btn btn-outline-secondary btn-sm me-1" onclick="filtrer('design', this)">Design</button>
+      <button class="btn btn-outline-secondary btn-sm me-1" onclick="filtrer('dev', this)">Développement</button>
+      <button class="btn btn-outline-secondary btn-sm me-1" onclick="filtrer('marketing', this)">Marketing</button>
+      <button class="btn btn-outline-secondary btn-sm me-1" onclick="filtrer('redaction', this)">Rédaction</button>
+      <button class="btn btn-outline-secondary btn-sm me-1" onclick="filtrer('video', this)">Vidéo</button>
     </div>
 
-    <!-- GRILLE DE PROFILS -->
+    <!-- Grille de profils — chaque carte a data-categorie pour le filtrage -->
     <div class="row" id="grille">
 
-      <!-- Profil 1 -->
+      <!-- Profil 1 — Design -->
       <div class="col-12 col-md-6 col-lg-4 mb-4 carte" data-categorie="design">
         <div class="card h-100 text-center shadow-sm">
           <div class="card-body">
-
             <div class="profil">
-            <img src="image projet/F4.jpg" alt="image projet/F4.jpg"width="200"height="200" class="rounded-circle mb-3" />
+              <img src="image projet/F4.jpg" alt="Photo de Amina Koné" width="200" height="200" class="rounded-circle mb-3">
             </div>
             <h5 class="card-title fw-bold">Amina Koné</h5>
             <p class="text-warning fw-bold small mb-1">Design Graphique</p>
@@ -81,12 +75,12 @@ href="contact.html">Contact</a></li>
         </div>
       </div>
 
-      <!-- Profil 2 -->
+      <!-- Profil 2 — Développement -->
       <div class="col-12 col-md-6 col-lg-4 mb-4 carte" data-categorie="dev">
         <div class="card h-100 text-center shadow-sm">
           <div class="card-body">
             <div class="profil">
-            <img src="image projet/utlisateur5.avif" alt="image projet/utlisateur5.avif"width="200"height="200" class="rounded-circle mb-3" />
+              <img src="image projet/utlisateur5.avif" alt="Photo de Moussa Diallo" width="200" height="200" class="rounded-circle mb-3">
             </div>
             <h5 class="card-title fw-bold">Moussa Diallo</h5>
             <p class="text-warning fw-bold small mb-1">Développement Web</p>
@@ -98,12 +92,12 @@ href="contact.html">Contact</a></li>
         </div>
       </div>
 
-      <!-- Profil 3 -->
+      <!-- Profil 3 — Marketing -->
       <div class="col-12 col-md-6 col-lg-4 mb-4 carte" data-categorie="marketing">
         <div class="card h-100 text-center shadow-sm">
           <div class="card-body">
             <div class="profil">
-            <img src="image projet/F5.jpg" alt="image projet/F5.jpg"width="200"height="200" class="rounded-circle mb-3" />
+              <img src="image projet/F5.jpg" alt="Photo de Fatou Sow" width="200" height="200" class="rounded-circle mb-3">
             </div>
             <h5 class="card-title fw-bold">Fatou Sow</h5>
             <p class="text-warning fw-bold small mb-1">Marketing Digital</p>
@@ -115,13 +109,12 @@ href="contact.html">Contact</a></li>
         </div>
       </div>
 
-      <!-- Profil 4 -->
+      <!-- Profil 4 — Rédaction -->
       <div class="col-12 col-md-6 col-lg-4 mb-4 carte" data-categorie="redaction">
         <div class="card h-100 text-center shadow-sm">
-            
           <div class="card-body">
             <div class="profil">
-            <img src="image projet/utlisateur2.jpg" alt="image projet/utlisateur2.jpg"width="200"height="200" class="rounded-circle mb-3" />
+              <img src="image projet/utlisateur2.jpg" alt="Photo de Cheikh Mbaye" width="200" height="200" class="rounded-circle mb-3">
             </div>
             <h5 class="card-title fw-bold">Cheikh Mbaye</h5>
             <p class="text-warning fw-bold small mb-1">Rédaction Web</p>
@@ -133,12 +126,12 @@ href="contact.html">Contact</a></li>
         </div>
       </div>
 
-      <!-- Profil 5 -->
+      <!-- Profil 5 — Vidéo -->
       <div class="col-12 col-md-6 col-lg-4 mb-4 carte" data-categorie="video">
         <div class="card h-100 text-center shadow-sm">
           <div class="card-body">
             <div class="profil">
-            <img src="image projet/F3.jpg" alt="image projet/F3.jpg"width="200"height="200" class="rounded-circle mb-3" />
+              <img src="image projet/F3.jpg" alt="Photo de Aïcha Traoré" width="200" height="200" class="rounded-circle mb-3">
             </div>
             <h5 class="card-title fw-bold">Aïcha Traoré</h5>
             <p class="text-warning fw-bold small mb-1">Montage Vidéo</p>
@@ -150,12 +143,12 @@ href="contact.html">Contact</a></li>
         </div>
       </div>
 
-      <!-- Profil 6 -->
+      <!-- Profil 6 — Développement -->
       <div class="col-12 col-md-6 col-lg-4 mb-4 carte" data-categorie="dev">
         <div class="card h-100 text-center shadow-sm">
           <div class="card-body">
             <div class="profil">
-            <img src="image projet/utlisateur6.avif" alt="image projet/utlisateur6.avif"width="200"height="200" class="rounded-circle mb-3" />
+              <img src="image projet/utlisateur6.avif" alt="Photo de Ibrahim Ndiaye" width="200" height="200" class="rounded-circle mb-3">
             </div>
             <h5 class="card-title fw-bold">Ibrahim Ndiaye</h5>
             <p class="text-warning fw-bold small mb-1">Développement Mobile</p>
@@ -167,12 +160,12 @@ href="contact.html">Contact</a></li>
         </div>
       </div>
 
-      <!-- Profil 7 -->
+      <!-- Profil 7 — Design -->
       <div class="col-12 col-md-6 col-lg-4 mb-4 carte" data-categorie="design">
         <div class="card h-100 text-center shadow-sm">
           <div class="card-body">
             <div class="profil">
-            <img src="image projet/F2.jpg" alt="image projet/F2.jpg"width="200"height="200" class="rounded-circle mb-3" />
+              <img src="image projet/F2.jpg" alt="Photo de Mariama Ba" width="200" height="200" class="rounded-circle mb-3">
             </div>
             <h5 class="card-title fw-bold">Mariama Ba</h5>
             <p class="text-warning fw-bold small mb-1">UI/UX Design</p>
@@ -184,12 +177,12 @@ href="contact.html">Contact</a></li>
         </div>
       </div>
 
-      <!-- Profil 8 -->
+      <!-- Profil 8 — Marketing -->
       <div class="col-12 col-md-6 col-lg-4 mb-4 carte" data-categorie="marketing">
         <div class="card h-100 text-center shadow-sm">
           <div class="card-body">
             <div class="profil">
-            <img src="image projet/utlisiateur4.webp" alt="image projet/utlisiateur4.webp"width="200"height="200" class="rounded-circle mb-3" />
+              <img src="image projet/utlisiateur4.webp" alt="Photo de Seydou Coulibaly" width="200" height="200" class="rounded-circle mb-3">
             </div>
             <h5 class="card-title fw-bold">Seydou Coulibaly</h5>
             <p class="text-warning fw-bold small mb-1">Community Management</p>
@@ -201,15 +194,15 @@ href="contact.html">Contact</a></li>
         </div>
       </div>
 
-      <!-- Profil 9 -->
+      <!-- Profil 9 — Rédaction -->
       <div class="col-12 col-md-6 col-lg-4 mb-4 carte" data-categorie="redaction">
         <div class="card h-100 text-center shadow-sm">
           <div class="card-body">
             <div class="profil">
-            <img src="image projet/F1.avif" alt="image projet/F1.avif"width="200"height="200" class="rounded-circle mb-3" />
+              <img src="image projet/F1.avif" alt="Photo de Nadia Ndiaye" width="200" height="200" class="rounded-circle mb-3">
             </div>
             <h5 class="card-title fw-bold">Nadia Ndiaye</h5>
-            <p class="text-warning fw-bold small mb-1">Traduction & Rédaction</p>
+            <p class="text-warning fw-bold small mb-1">Traduction &amp; Rédaction</p>
             <p class="card-text text-muted small">Traductrice français/anglais et rédactrice de rapports pour ONG et entreprises.</p>
             <p class="small text-secondary mb-1">💰 9 000 FCFA / heure</p>
             <p class="text-warning mb-2">★★★★☆</p>
@@ -221,48 +214,49 @@ href="contact.html">Contact</a></li>
     </div>
   </div>
 
-  <!-- FOOTER -->
-  <footer class="bg-dark text-center text-secondary py-4 mt-5">
-    <!-- AfriTalent description - pas en grid interne -->
+  <!-- ===== FOOTER ===== -->
+  <footer class="bg-dark text-white text-center py-4 mt-5">
+    <div class="container">
+      <div class="row justify-content-center">
         <div class="col-lg-6 mb-4">
-            <h2 class="text-warning"><strong style="color: white;">Afritalent</strong></h2>
-            <p class="text-white-50">La plateforme qui connecte les freelances tech africains aux meilleures opportunités mondiales.</p>
+          <h2><strong>AfriTalent</strong></h2>
+          <p class="text-white-50">La plateforme qui connecte les freelances tech africains aux meilleures opportunités mondiales.</p>
         </div>
-
-        <!-- Liens utiles - pas en grid interne -->
         <div class="col-lg-3 mb-4">
-            <h3 class="h5">Liens utiles</h3>
-            <ul class="list-unstyled">
-                <li><a href="Index.html" class="text-white-50 text-decoration-none">Acceuil</a></li>
-                <li><a href="About.html" class="text-white-50 text-decoration-none">A propos</a></li>
-                <li><a href="Tarif.html" class="text-white-50 text-decoration-none">Tarif</a></li>
-                <li><a href="Contact.html" class="text-white-50 text-decoration-none">Contact</a></li>
-                <li><a href="Freelances.html" class="text-white-50 text-decoration-none">Freelance</a></li>
-            </ul>
+          <h3 class="h5">Liens utiles</h3>
+          <ul class="list-unstyled">
+            <li><a href="index.html" class="text-white-50 text-decoration-none">Accueil</a></li>
+            <li><a href="about.html" class="text-white-50 text-decoration-none">À propos</a></li>
+            <li><a href="tarif.html" class="text-white-50 text-decoration-none">Tarifs</a></li>
+            <li><a href="contact.html" class="text-white-50 text-decoration-none">Contact</a></li>
+            <li><a href="freelances.html" class="text-white-50 text-decoration-none">Freelances</a></li>
+          </ul>
         </div>
-
-        <!-- Réseaux sociaux -->
         <div class="col-lg-3 mb-4">
-            <h3 class="h5">Suivez-nous</h3>
-            <div class="d-flex gap-3 mt-2">
-                <a href="https://www.instagram.com" target="_blank">
-                    <img src="https://tse4.mm.bing.net/th/id/OIP.JtmXSh_uyZBaTg1eXd-NtgHaHa?rs=1&pid=ImgDetMain&o=7&rm=3" alt="instagram" width="35" height="35">
-                </a>
-                <a href="https://www.facebook.com" target="_blank">
-                    <img src="https://static.vecteezy.com/system/resources/previews/025/734/144/non_2x/social-media-icon-free-png.png" alt="facebook" width="40" height="40">
-                </a>
-                <a href="https://www.twitter.com" target="_blank">
-                    <img src="https://static.vecteezy.com/system/resources/previews/018/930/745/original/twitter-logo-twitter-icon-transparent-free-free-png.png" alt="twitter" width="45" height="45">
-                </a>
-            </div>
-    <p class="mb-0">© 2026 AfriTalent Tous droits réservés</p>
+          <h3 class="h5">Suivez-nous</h3>
+          <div class="d-flex gap-3 mt-2 justify-content-center">
+            <a href="https://www.instagram.com" target="_blank">
+              <img src="https://tse4.mm.bing.net/th/id/OIP.JtmXSh_uyZBaTg1eXd-NtgHaHa?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Instagram" width="35" height="35">
+            </a>
+            <a href="https://www.facebook.com" target="_blank">
+              <img src="https://static.vecteezy.com/system/resources/previews/025/734/144/non_2x/social-media-icon-free-png.png" alt="Facebook" width="40" height="40">
+            </a>
+            <a href="https://www.twitter.com" target="_blank">
+              <img src="https://static.vecteezy.com/system/resources/previews/018/930/745/original/twitter-logo-twitter-icon-transparent-free-free-png.png" alt="Twitter" width="45" height="45">
+            </a>
+          </div>
+        </div>
+      </div>
+      <p class="mb-0">&copy; 2026 AfriTalent. Tous droits réservés.</p>
+    </div>
   </footer>
 
-  <script >
-<!-- Bootstrap 5 via CDN : script JavaScript -->
-src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-</script>
-<!-- Votre script JavaScript -->
-<script src="js/main.js"></script>
+  <!-- COMMIT 6 : Bouton retour en haut -->
+  <button id="backToTop" title="Retour en haut">↑</button>
+
+  <!-- CORRECTION : Bootstrap JS correctement intégré -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+
 </body>
 </html>

@@ -1,52 +1,48 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AfriTalent — About</title>
-<!-- Bootstrap 5 via CDN : feuille de style -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-rel="stylesheet">
-<!-- Votre feuille de style personnelle -->
-<link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AfriTalent — À propos</title>
+  <!-- Bootstrap 5 : feuille de style -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Icônes Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <!-- CSS personnalisé -->
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<!-- Le contenu de la page sera ajoute ici -->
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark"> 
-     <div>
-        <img src="image projet/logo.jpeg" alt="image projet/logo.jpeg" width="200"height="80">
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="d-flex align-items-center px-3">
+      <img src="image projet/logo.jpeg" alt="Logo AfriTalent" width="200" height="80">
     </div>
-<div class="container"> 
-   
-<!-- <a class="navbar-brand" href="index.html">AfriTalent</a>  -->
-<button class="navbar-toggler" type="button" 
-data-bs-toggle="collapse" 
-data-bs-target="#navMenu" 
-aria-controls="navMenu" 
-aria-expanded="false" 
-aria-label="Toggle navigation"> 
-<span class="navbar-toggler-icon"></span> 
-</button> 
-<div class="collapse navbar-collapse" id="navMenu"> 
-<ul class="navbar-nav ms-auto"> 
-<li class="nav-item"><a class="nav-link active" 
-href="index.html">Accueil</a></li> 
-<li class="nav-item"><a class="nav-link" 
-href="Freelances.html">Freelances</a></li> 
-<li class="nav-item"><a class="nav-link" 
-href="Tarif.html">Tarifs</a></li> 
-<li class="nav-item"><a class="nav-link" href="about.html">A 
-propos</a></li> 
-<li class="nav-item"><a class="nav-link" 
-href="contact.html">Contact</a></li> 
-</ul> 
-</div> 
-<button id="themeToggle">🌙</button>
-</div> 
-</nav>
-<!-- Section Notre Histoire -->
-  <section class="py-5">
+    <div class="container">
+      <button class="navbar-toggler" type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navMenu"
+        aria-controls="navMenu"
+        aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+          <li class="nav-item"><a class="nav-link" href="freelances.html">Freelances</a></li>
+          <li class="nav-item"><a class="nav-link" href="tarif.html">Tarifs</a></li>
+          <li class="nav-item"><a class="nav-link active" href="about.html">À propos</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <!-- COMMIT 6 : Bouton dark/light mode -->
+      <button id="themeToggle">🌙</button>
+    </div>
+  </nav>
+
+  <!-- ===== SECTION NOTRE HISTOIRE ===== -->
+  <section class="py-5 fade-section">
     <div class="container">
       <h2 class="mb-4">Notre Histoire</h2>
       <div class="row align-items-center">
@@ -55,38 +51,38 @@ href="contact.html">Contact</a></li>
           <p>Aujourd'hui, nous sommes fiers de servir des milliers de clients à travers le monde, tout en restant fidèles à nos valeurs fondatrices : proximité, qualité et engagement.</p>
         </div>
         <div class="col-md-6">
-          <img src="image projet/histoire.avif"width="380"heigth="380">
+          <!-- CORRECTION : attribut alt ajouté + heigth → height -->
+          <img src="image projet/histoire.avif" alt="Histoire de AfriTalent" width="380" height="380" class="img-fluid rounded">
         </div>
       </div>
     </div>
   </section>
- 
-  <!-- Section L'équipe -->
-  <section class="py-5 bg-light">
+
+  <!-- ===== SECTION L'ÉQUIPE ===== -->
+  <section class="py-5 bg-light fade-section">
     <div class="container">
       <h2 class="mb-4 text-center">L'équipe</h2>
       <div class="row g-4">
- 
+
         <!-- Membre 1 -->
         <div class="col-md-3">
           <div class="card text-center h-100">
-            <img src="" >
             <div class="card-body">
-                <img src="image projet/technique.webp" alt="image projet/utlisateur6.avif"width="220"heigth="80" class="rounded-circle mb-3">
+              <img src="image projet/technique.webp" alt="Photo de Dominique Preira" width="220" height="220" class="rounded-circle mb-3">
               <h5 class="card-title">Dominique Preira</h5>
-              <p class="card-text text-muted">CEO & Fondatrice</p>
+              <p class="card-text text-muted">CEO &amp; Fondatrice</p>
               <a href="#" class="me-2"><i class="bi bi-linkedin fs-5"></i></a>
               <a href="#" class="me-2"><i class="bi bi-twitter-x fs-5"></i></a>
               <a href="#"><i class="bi bi-github fs-5"></i></a>
             </div>
           </div>
         </div>
- 
+
         <!-- Membre 2 -->
         <div class="col-md-3">
           <div class="card text-center h-100">
-            <img src="image projet/utlisateur6.avif"width="220"heigth="80" class="rounded-circle mb-3">
             <div class="card-body">
+              <img src="image projet/utlisateur6.avif" alt="Photo de Babacar Diop" width="220" height="220" class="rounded-circle mb-3">
               <h5 class="card-title">Babacar Diop</h5>
               <p class="card-text text-muted">Directeur Technique</p>
               <a href="#" class="me-2"><i class="bi bi-linkedin fs-5"></i></a>
@@ -95,13 +91,12 @@ href="contact.html">Contact</a></li>
             </div>
           </div>
         </div>
- 
+
         <!-- Membre 3 -->
         <div class="col-md-3">
           <div class="card text-center h-100">
-            <img src="image projet/F1.avif"width="260"heigth="80" class="rounded-circle mb-3">
             <div class="card-body">
-            
+              <img src="image projet/F1.avif" alt="Photo de Sophie Niang" width="220" height="220" class="rounded-circle mb-3">
               <h5 class="card-title">Sophie Niang</h5>
               <p class="card-text text-muted">Responsable Marketing</p>
               <a href="#" class="me-2"><i class="bi bi-linkedin fs-5"></i></a>
@@ -110,12 +105,13 @@ href="contact.html">Contact</a></li>
             </div>
           </div>
         </div>
- 
+
         <!-- Membre 4 -->
         <div class="col-md-3">
           <div class="card text-center h-100">
-            <img src="image projet/utlisateur5.avif"widht="220"heigth="80" class="rounded-circle mb-3">
             <div class="card-body">
+              <!-- CORRECTION : widht → width -->
+              <img src="image projet/utlisateur5.avif" alt="Photo de Karim Abdel Kafir" width="220" height="220" class="rounded-circle mb-3">
               <h5 class="card-title">Karim Abdel Kafir</h5>
               <p class="card-text text-muted">Designer UX/UI</p>
               <a href="#" class="me-2"><i class="bi bi-linkedin fs-5"></i></a>
@@ -124,130 +120,129 @@ href="contact.html">Contact</a></li>
             </div>
           </div>
         </div>
- 
+
       </div>
     </div>
   </section>
- 
-  <!-- Section Nos Valeurs -->
-  <section class="py-5">
+
+  <!-- ===== SECTION NOS VALEURS ===== -->
+  <section class="py-5 fade-section">
     <div class="container">
       <h2 class="mb-4 text-center">Nos Valeurs</h2>
       <div class="row g-4 text-center">
- 
         <div class="col-md-3">
           <i class="bi bi-lightbulb fs-1 text-warning"></i>
           <h5 class="mt-2">Innovation</h5>
           <p class="text-muted">Nous cherchons toujours de nouvelles façons de répondre aux besoins de nos utilisateurs.</p>
         </div>
- 
         <div class="col-md-3">
           <i class="bi bi-universal-access fs-1 text-primary"></i>
           <h5 class="mt-2">Accessibilité</h5>
           <p class="text-muted">Nos services sont conçus pour être accessibles à tous, sans exception.</p>
         </div>
- 
         <div class="col-md-3">
           <i class="bi bi-people fs-1 text-success"></i>
           <h5 class="mt-2">Communauté</h5>
           <p class="text-muted">Nous croyons en la force du collectif et construisons des liens durables.</p>
         </div>
- 
         <div class="col-md-3">
           <i class="bi bi-star fs-1 text-danger"></i>
           <h5 class="mt-2">Excellence</h5>
           <p class="text-muted">Nous visons la qualité dans chaque projet, chaque interaction, chaque détail.</p>
         </div>
- 
       </div>
     </div>
   </section>
- 
-  <!-- Section Chiffres Clés (Bento Grid) -->
-  <section class="py-5 bg-dark text-white">
+
+  <!-- ===== SECTION CHIFFRES CLÉS (compteurs animés) ===== -->
+  <section class="py-5 bg-dark text-white fade-section">
     <div class="container">
       <h2 class="mb-4 text-center">Chiffres Clés</h2>
       <div class="row g-3 text-center">
- 
+
+        <!-- COMMIT 7 : data-target = valeur finale, commence à 0 -->
         <div class="col-md-6">
           <div class="bg-secondary p-5 rounded">
-            <h1 class="display-3 fw-bold" id="clients">378</h1>
+            <h1 class="display-3 fw-bold" data-target="378">0</h1>
             <p class="fs-5">Clients satisfaits</p>
           </div>
         </div>
- 
+
         <div class="col-md-3">
           <div class="bg-secondary p-5 rounded h-100 d-flex flex-column justify-content-center">
-            <h1 class="display-3 fw-bold" id="projets">3156</h1>
+            <h1 class="display-3 fw-bold" data-target="3156">0</h1>
             <p class="fs-5">Projets réalisés</p>
           </div>
         </div>
- 
+
         <div class="col-md-3">
           <div class="bg-secondary p-5 rounded h-100 d-flex flex-column justify-content-center">
-            <h1 class="display-3 fw-bold" id="pays">45</h1>
+            <h1 class="display-3 fw-bold" data-target="45">0</h1>
             <p class="fs-5">Pays couverts</p>
           </div>
         </div>
- 
+
         <div class="col-md-4">
           <div class="bg-secondary p-5 rounded">
-            <h1 class="display-3 fw-bold" id="annees">22</h1>
+            <h1 class="display-3 fw-bold" data-target="22">0</h1>
             <p class="fs-5">Années d'expérience</p>
           </div>
         </div>
- 
+
         <div class="col-md-8">
           <div class="bg-secondary p-5 rounded">
-            <h1 class="display-3 fw-bold" id="employes">28345</h1>
+            <h1 class="display-3 fw-bold" data-target="28345">0</h1>
             <p class="fs-5">Employés dans le monde</p>
           </div>
         </div>
- 
+
       </div>
     </div>
   </section>
- 
-  <!-- Footer -->
-  <footer class="bg-dark text-white text-center py-3">
-       <!-- AfriTalent description - pas en grid interne -->
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="bg-dark text-white text-center py-4">
+    <div class="container">
+      <div class="row justify-content-center">
         <div class="col-lg-6 mb-4">
-            <h2 class="text-warning"><strong style="color: white;">Afritalent</strong></h2>
-            <p class="text-white-50">La plateforme qui connecte les freelances tech africains aux meilleures opportunités mondiales.</p>
+          <h2><strong>AfriTalent</strong></h2>
+          <p class="text-white-50">La plateforme qui connecte les freelances tech africains aux meilleures opportunités mondiales.</p>
         </div>
-
-        <!-- Liens utiles - pas en grid interne -->
         <div class="col-lg-3 mb-4">
-            <h3 class="h5">Liens utiles</h3>
-            <ul class="list-unstyled">
-                <li><a href="Index.html" class="text-white-50 text-decoration-none">Acceuil</a></li>
-                <li><a href="About.html" class="text-white-50 text-decoration-none">A propos</a></li>
-                <li><a href="Tarif.html" class="text-white-50 text-decoration-none">Tarif</a></li>
-                <li><a href="Contact.html" class="text-white-50 text-decoration-none">Contact</a></li>
-                <li><a href="Freelances.html" class="text-white-50 text-decoration-none">Freelance</a></li>
-            </ul>
+          <h3 class="h5">Liens utiles</h3>
+          <ul class="list-unstyled">
+            <li><a href="index.html" class="text-white-50 text-decoration-none">Accueil</a></li>
+            <li><a href="about.html" class="text-white-50 text-decoration-none">À propos</a></li>
+            <li><a href="tarif.html" class="text-white-50 text-decoration-none">Tarifs</a></li>
+            <li><a href="contact.html" class="text-white-50 text-decoration-none">Contact</a></li>
+            <li><a href="freelances.html" class="text-white-50 text-decoration-none">Freelances</a></li>
+          </ul>
         </div>
-
-        <!-- Réseaux sociaux -->
         <div class="col-lg-3 mb-4">
-            <h3 class="h5">Suivez-nous</h3>
-            <div class="d-flex gap-3 mt-2">
-                <a href="https://www.instagram.com" target="_blank">
-                    <img src="https://tse4.mm.bing.net/th/id/OIP.JtmXSh_uyZBaTg1eXd-NtgHaHa?rs=1&pid=ImgDetMain&o=7&rm=3" alt="instagram" width="35" height="35">
-                </a>
-                <a href="https://www.facebook.com" target="_blank">
-                    <img src="https://static.vecteezy.com/system/resources/previews/025/734/144/non_2x/social-media-icon-free-png.png" alt="facebook" width="40" height="40">
-                </a>
-                <a href="https://www.twitter.com" target="_blank">
-                    <img src="https://static.vecteezy.com/system/resources/previews/018/930/745/original/twitter-logo-twitter-icon-transparent-free-free-png.png" alt="twitter" width="45" height="45">
-                </a>
-            </div>
-    <p class="mb-0">&copy; 2026 AfriTalent. Tous droits réservés.</p>
+          <h3 class="h5">Suivez-nous</h3>
+          <div class="d-flex gap-3 mt-2 justify-content-center">
+            <a href="https://www.instagram.com" target="_blank">
+              <img src="https://tse4.mm.bing.net/th/id/OIP.JtmXSh_uyZBaTg1eXd-NtgHaHa?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Instagram" width="35" height="35">
+            </a>
+            <a href="https://www.facebook.com" target="_blank">
+              <img src="https://static.vecteezy.com/system/resources/previews/025/734/144/non_2x/social-media-icon-free-png.png" alt="Facebook" width="40" height="40">
+            </a>
+            <a href="https://www.twitter.com" target="_blank">
+              <img src="https://static.vecteezy.com/system/resources/previews/018/930/745/original/twitter-logo-twitter-icon-transparent-free-free-png.png" alt="Twitter" width="45" height="45">
+            </a>
+          </div>
+        </div>
+      </div>
+      <p class="mb-0">&copy; 2026 AfriTalent. Tous droits réservés.</p>
+    </div>
   </footer>
 
-<!-- Bootstrap 5 via CDN : script JavaScript -->
-<script
-src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-></script>
-<!-- Votre script JavaScript -->
-<script src="js/main.js"></script>
+  <!-- COMMIT 6 : Bouton retour en haut -->
+  <button id="backToTop" title="Retour en haut">↑</button>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+</html>

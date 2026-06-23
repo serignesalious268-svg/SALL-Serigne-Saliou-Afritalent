@@ -197,7 +197,7 @@ body[data-theme="dark"] .form-select {
    COMMIT 7 – ANIMATIONS FADE-IN
    Les sections partent de opacity 0 et descendent
    La classe .visible (ajoutée par JS) les fait apparaître
-================================================================ */
+ */
 .fade-section {
   opacity: 0;
   transform: translateY(30px);
